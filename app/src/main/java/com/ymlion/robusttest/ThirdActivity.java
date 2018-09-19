@@ -36,32 +36,52 @@ public class ThirdActivity extends AppCompatActivity {
                 }
             };
 
+    /**
+     * 外部类方法调用 + 外部方法变量引用
+     */
     private void setP2(String p) {
         P2Listener p2l = (p1, p2) -> {
             RobustModify.modify();
             String p3 = p + p1 + p2;
-            Log.d("TAG", "onP3: " + p3);
+            Log.d("TAG", "onP3: " + setR2(p3));
+            //Log.d("TAG", "onP2: " + setR2(p) + p1 + p2);
         };
         p2l.onP2("33", 3);
     }
 
+    /**
+     * 外部类方法调用
+     */
     private void setR1() {
         RListener r = p1 -> {
-            RobustModify.modify();
-            if ("2333".equals(p1)) {
-                return 233333;
+            /*RobustModify.modify();
+            int res = Integer.valueOf(setR2(p1));
+            if (res == 2333) {
+                res *= 10 + 3;
+                Log.d("TAG", "setR1: the num has problem.");
             }
-            if (p1 != null) {
-                return Integer.valueOf(p1);
-            }
-            return -1;
+            return res;*/
+            String s = setR2(p1);
+            Log.d("TAG", "setR1: " + s);
+            return Integer.valueOf(s);
         };
         int res = r.onR("2333");
         Log.d("TAG", "setR1: " + res);
     }
 
-    private void setR2(String r) {
-
+    private String setR2(String r) {
+        if (r != null) {
+            int res;
+            try {
+                res = Integer.valueOf(r);
+                if (res > 0) {
+                    return r;
+                }
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+        return "2333";
     }
 
     @Override

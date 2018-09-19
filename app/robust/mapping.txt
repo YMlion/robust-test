@@ -17990,11 +17990,11 @@ com.ymlion.robusttest.AppContext -> com.ymlion.robusttest.AppContext:
     16:17:void onTerminate() -> onTerminate
 com.ymlion.robusttest.MainActivity -> com.ymlion.robusttest.MainActivity:
     com.meituan.robust.ChangeQuickRedirect changeQuickRedirect -> m
-    11:11:void <init>() -> <init>
-    14:27:void onCreate(android.os.Bundle) -> onCreate
-    31:36:void openActivity(android.view.View) -> openActivity
-    39:43:void openActivity3(android.view.View) -> openActivity3
-    22:26:void lambda$onCreate$0$MainActivity(android.view.View) -> a
+    12:12:void <init>() -> <init>
+    15:28:void onCreate(android.os.Bundle) -> onCreate
+    32:37:void openActivity(android.view.View) -> openActivity
+    40:44:void openActivity3(android.view.View) -> openActivity3
+    23:27:void lambda$onCreate$0$MainActivity(android.view.View) -> a
 com.ymlion.robusttest.MainActivity$$Lambda$0 -> com.ymlion.robusttest.a:
     com.meituan.robust.ChangeQuickRedirect changeQuickRedirect -> a
     android.view.View$OnClickListener $instance -> b
@@ -18041,31 +18041,32 @@ com.ymlion.robusttest.ThirdActivity -> com.ymlion.robusttest.ThirdActivity:
     com.meituan.robust.ChangeQuickRedirect changeQuickRedirect -> m
     android.widget.TextView mTextMessage -> n
     android.support.design.widget.BottomNavigationView$OnNavigationItemSelectedListener mOnNavigationItemSelectedListener -> o
-    11:15:void <init>() -> <init>
-    38:40:void setP2(java.lang.String) -> b
-    43:51:void setR1() -> k
-    59:65:void onCreate(android.os.Bundle) -> onCreate
-    44:47:int lambda$setR1$1$ThirdActivity(java.lang.String) -> a
-    38:38:void lambda$setP2$0$ThirdActivity(java.lang.String,java.lang.String,int) -> a
-    11:11:android.widget.TextView access$000(com.ymlion.robusttest.ThirdActivity) -> a
-    11:11:void access$100(com.ymlion.robusttest.ThirdActivity,java.lang.String) -> a
-    11:11:void access$200(com.ymlion.robusttest.ThirdActivity) -> b
+    12:16:void <init>() -> <init>
+    43:50:void setP2(java.lang.String) -> b
+    56:70:void setR1() -> k
+    73:84:java.lang.String setR2(java.lang.String) -> c
+    89:95:void onCreate(android.os.Bundle) -> onCreate
+    64:66:int lambda$setR1$1$ThirdActivity(java.lang.String) -> a
+    47:48:void lambda$setP2$0$ThirdActivity(java.lang.String,java.lang.String,int) -> a
+    12:12:android.widget.TextView access$000(com.ymlion.robusttest.ThirdActivity) -> a
+    12:12:void access$100(com.ymlion.robusttest.ThirdActivity,java.lang.String) -> a
+    12:12:void access$200(com.ymlion.robusttest.ThirdActivity) -> b
 com.ymlion.robusttest.ThirdActivity$$Lambda$0 -> com.ymlion.robusttest.f:
     com.meituan.robust.ChangeQuickRedirect changeQuickRedirect -> a
-    java.lang.String arg$1 -> b
-    void <init>(java.lang.String) -> <init>
+    com.ymlion.robusttest.ThirdActivity arg$1 -> b
+    java.lang.String arg$2 -> c
+    void <init>(com.ymlion.robusttest.ThirdActivity,java.lang.String) -> <init>
     void onP2(java.lang.String,int) -> a
 com.ymlion.robusttest.ThirdActivity$$Lambda$1 -> com.ymlion.robusttest.g:
     com.meituan.robust.ChangeQuickRedirect changeQuickRedirect -> a
-    com.ymlion.robusttest.ThirdActivity$RListener $instance -> b
-    void <init>() -> <init>
+    com.ymlion.robusttest.ThirdActivity arg$1 -> b
+    void <init>(com.ymlion.robusttest.ThirdActivity) -> <init>
     int onR(java.lang.String) -> a
-    void <clinit>() -> <clinit>
 com.ymlion.robusttest.ThirdActivity$1 -> com.ymlion.robusttest.ThirdActivity$1:
     com.meituan.robust.ChangeQuickRedirect changeQuickRedirect -> a
     com.ymlion.robusttest.ThirdActivity this$0 -> b
-    16:16:void <init>(com.ymlion.robusttest.ThirdActivity) -> <init>
-    20:33:boolean onNavigationItemSelected(android.view.MenuItem) -> a
+    18:18:void <init>(com.ymlion.robusttest.ThirdActivity) -> <init>
+    22:35:boolean onNavigationItemSelected(android.view.MenuItem) -> a
 com.ymlion.robusttest.ThirdActivity$P2Listener -> com.ymlion.robusttest.ThirdActivity$a:
     void onP2(java.lang.String,int) -> a
 com.ymlion.robusttest.ThirdActivity$RListener -> com.ymlion.robusttest.ThirdActivity$b:
