@@ -41,10 +41,10 @@ public class ThirdActivity extends AppCompatActivity {
      */
     private void setP2(String p) {
         P2Listener p2l = (p1, p2) -> {
-            RobustModify.modify();
-            String p3 = p + p1 + p2;
-            Log.d("TAG", "onP3: " + setR2(p3));
-            //Log.d("TAG", "onP2: " + setR2(p) + p1 + p2);
+            //RobustModify.modify();
+            //String p3 = p + p1 + p2;
+            //Log.d("TAG", "onP3: " + setR2(p3));
+            Log.d("TAG", "onP2: " + setR2(p) + p1 + p2);
         };
         p2l.onP2("33", 3);
     }
@@ -54,16 +54,15 @@ public class ThirdActivity extends AppCompatActivity {
      */
     private void setR1() {
         RListener r = p1 -> {
-            /*RobustModify.modify();
-            int res = Integer.valueOf(setR2(p1));
+            RobustModify.modify();
+            p1 = setR2(p1);
+            Log.d("TAG", "setR1: onR1 " + p1);
+            int res = Integer.valueOf(p1);
             if (res == 2333) {
-                res *= 10 + 3;
+                res = res * 10 + 3;
                 Log.d("TAG", "setR1: the num has problem.");
             }
-            return res;*/
-            String s = setR2(p1);
-            Log.d("TAG", "setR1: " + s);
-            return Integer.valueOf(s);
+            return res;
         };
         int res = r.onR("2333");
         Log.d("TAG", "setR1: " + res);
