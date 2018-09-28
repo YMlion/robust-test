@@ -41,10 +41,10 @@ public class ThirdActivity extends AppCompatActivity {
      */
     private void setP2(String p) {
         P2Listener p2l = (p1, p2) -> {
-            //RobustModify.modify();
-            //String p3 = p + p1 + p2;
-            //Log.d("TAG", "onP3: " + setR2(p3));
-            Log.d("TAG", "onP2: " + setR2(p) + p1 + p2);
+            RobustModify.modify();
+            String p3 = p + p1 + p2;
+            Log.d("TAG", "onP3: " + setR2(p3));
+            //Log.d("TAG", "onP2: " + setR2(p) + p1 + p2);
         };
         p2l.onP2("33", 3);
     }
@@ -55,17 +55,24 @@ public class ThirdActivity extends AppCompatActivity {
     private void setR1() {
         RListener r = p1 -> {
             RobustModify.modify();
-            p1 = setR2(p1);
-            Log.d("TAG", "setR1: onR1 " + p1);
-            int res = Integer.valueOf(p1);
-            if (res == 2333) {
-                res = res * 10 + 3;
-                Log.d("TAG", "setR1: the num has problem.");
-            }
-            return res;
+            //Log.d("TAG", "setR1: not fix.");
+            Log.d("TAG", "setR1: fix.");
+            //return getInt(p1);
+            return Integer.valueOf(p1);
         };
         int res = r.onR("2333");
         Log.d("TAG", "setR1: " + res);
+    }
+
+    private int getInt(String p1) {
+        p1 = setR2(p1);
+        Log.d("TAG", "setR1: onR1 " + p1);
+        int res = Integer.valueOf(p1);
+        if (res == 2333) {
+            res = res * 10 + 3;
+            Log.d("TAG", "setR1: the num has problem.");
+        }
+        return res;
     }
 
     private String setR2(String r) {

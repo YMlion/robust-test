@@ -2,6 +2,7 @@ package com.ymlion.robusttest;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.SystemClock;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
 import android.support.design.widget.Snackbar;
@@ -14,6 +15,10 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
+import android.widget.Toast;
+import com.meituan.robust.patch.RobustModify;
+import com.meituan.robust.patch.annotaion.Add;
+import com.meituan.robust.patch.annotaion.Modify;
 
 public class SecondActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -64,7 +69,7 @@ public class SecondActivity extends AppCompatActivity
     }
 
     @Override
-    //@Modify
+    @Modify
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle action bar item clicks here. The action bar will
         // automatically handle clicks on the Home/Up button, so long
@@ -73,17 +78,17 @@ public class SecondActivity extends AppCompatActivity
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
-            //showToast();
+            showToast();
             return true;
         }
 
         return super.onOptionsItemSelected(item);
     }
 
-    //@Add
-    //private void showToast() {
-    //    Toast.makeText(this, "settings", Toast.LENGTH_SHORT).show();
-    //}
+    @Add
+    private void showToast() {
+        Toast.makeText(this, "settings", Toast.LENGTH_SHORT).show();
+    }
 
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
@@ -113,11 +118,11 @@ public class SecondActivity extends AppCompatActivity
 
     private void newThread(String camera) {
         new Thread(() -> {
-            //RobustModify.modify();
-            //if (camera.equals("camera")) {
-            //    Log.d("TAG", "sleep 2000ms.");
-            //    SystemClock.sleep(2000);
-            //}
+            RobustModify.modify();
+            if (camera.equals("camera")) {
+                Log.d("TAG", "sleep 2000ms.");
+                SystemClock.sleep(2000);
+            }
             Log.d("TAG", "run: " + camera);
         }).start();
     }

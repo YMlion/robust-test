@@ -7,6 +7,8 @@ import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+import com.meituan.robust.patch.RobustModify;
+import com.meituan.robust.patch.annotaion.Modify;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -18,20 +20,20 @@ public class MainActivity extends AppCompatActivity {
 
         FloatingActionButton fab = findViewById(R.id.fab);
         fab.setOnClickListener(v -> {
-            //RobustModify.modify();
-            Snackbar.make(v, "Replace with your own action", Snackbar.LENGTH_LONG)
-                    .setAction("Action", null).show();
-            //Snackbar.make(v, "Replace with fix action", Snackbar.LENGTH_LONG)
+            RobustModify.modify();
+            //Snackbar.make(v, "Replace with your own action", Snackbar.LENGTH_LONG)
             //        .setAction("Action", null).show();
+            Snackbar.make(v, "Replace with fix action", Snackbar.LENGTH_LONG)
+                    .setAction("Action", null).show();
         });
     }
 
-    //@Modify
+    @Modify
     public void openActivity(View view) {
         Intent intent = new Intent(this, SecondActivity.class);
         intent.putExtra("content", "this is from MainActivity.");
-        intent.putExtra("open", false);
-        //intent.putExtra("open", true);
+        //intent.putExtra("open", false);
+        intent.putExtra("open", true);
         startActivity(intent);
     }
 

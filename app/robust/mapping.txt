@@ -354,7 +354,7 @@ android.support.compat.R$styleable -> android.support.compat.a$b:
     int FontFamilyFont_font -> FontFamilyFont_font
     int FontFamilyFont_fontStyle -> FontFamilyFont_fontStyle
     int FontFamilyFont_fontWeight -> FontFamilyFont_fontWeight
-    118:125:void <clinit>() -> <clinit>
+    142:149:void <clinit>() -> <clinit>
 android.support.constraint.Barrier -> android.support.constraint.a:
     int mIndicatedType -> f
     int mResolvedType -> g
@@ -681,7 +681,7 @@ android.support.constraint.R$id -> android.support.constraint.g$a:
     int start -> start
     int top -> top
     int wrap -> wrap
-    69:69:void <init>() -> <init>
+    74:74:void <init>() -> <init>
 android.support.constraint.R$styleable -> android.support.constraint.g$b:
     int[] ConstraintLayout_Layout -> ConstraintLayout_Layout
     int ConstraintLayout_Layout_android_orientation -> ConstraintLayout_Layout_android_orientation
@@ -830,7 +830,7 @@ android.support.constraint.R$styleable -> android.support.constraint.g$b:
     int ConstraintSet_layout_goneMarginTop -> ConstraintSet_layout_goneMarginTop
     int[] LinearConstraintLayout -> LinearConstraintLayout
     int LinearConstraintLayout_android_orientation -> LinearConstraintLayout_android_orientation
-    86:231:void <clinit>() -> <clinit>
+    94:239:void <clinit>() -> <clinit>
 android.support.constraint.solver.ArrayLinkedVariables -> android.support.constraint.solver.a:
     int currentSize -> a
     android.support.constraint.solver.ArrayRow mRow -> b
@@ -1568,7 +1568,7 @@ android.support.coreui.R$styleable -> android.support.coreui.a$c:
     int FontFamilyFont_font -> FontFamilyFont_font
     int FontFamilyFont_fontStyle -> FontFamilyFont_fontStyle
     int FontFamilyFont_fontWeight -> FontFamilyFont_fontWeight
-    135:153:void <clinit>() -> <clinit>
+    159:177:void <clinit>() -> <clinit>
 android.support.design.R -> android.support.design.a:
 android.support.design.R$anim -> android.support.design.a$a:
     int abc_fade_in -> abc_fade_in
@@ -3434,7 +3434,7 @@ android.support.design.R$styleable -> android.support.design.a$j:
     int ViewStubCompat_android_id -> ViewStubCompat_android_id
     int ViewStubCompat_android_layout -> ViewStubCompat_android_layout
     int ViewStubCompat_android_inflatedId -> ViewStubCompat_android_inflatedId
-    1392:1929:void <clinit>() -> <clinit>
+    1420:1957:void <clinit>() -> <clinit>
 android.support.design.internal.BaselineLayout -> android.support.design.internal.BaselineLayout:
     int mBaseline -> a
     31:35:void <init>(android.content.Context) -> <init>
@@ -12305,7 +12305,7 @@ android.support.v7.appcompat.R$styleable -> android.support.v7.appcompat.a$j:
     int ViewStubCompat_android_id -> ViewStubCompat_android_id
     int ViewStubCompat_android_layout -> ViewStubCompat_android_layout
     int ViewStubCompat_android_inflatedId -> ViewStubCompat_android_inflatedId
-    1122:1528:void <clinit>() -> <clinit>
+    1148:1554:void <clinit>() -> <clinit>
 android.support.v7.content.res.AppCompatColorStateListInflater -> android.support.v7.content.res.a:
     55:67:android.content.res.ColorStateList createFromXml(android.content.res.Resources,org.xmlpull.v1.XmlPullParser,android.content.res.Resources$Theme) -> a
     82:88:android.content.res.ColorStateList createFromXmlInner(android.content.res.Resources,org.xmlpull.v1.XmlPullParser,android.util.AttributeSet,android.content.res.Resources$Theme) -> a
@@ -12467,7 +12467,7 @@ android.support.v7.recyclerview.R$styleable -> android.support.v7.recyclerview.a
     int RecyclerView_reverseLayout -> RecyclerView_reverseLayout
     int RecyclerView_spanCount -> RecyclerView_spanCount
     int RecyclerView_stackFromEnd -> RecyclerView_stackFromEnd
-    151:176:void <clinit>() -> <clinit>
+    175:200:void <clinit>() -> <clinit>
 android.support.v7.view.ActionBarPolicy -> android.support.v7.view.a:
     android.content.Context mContext -> a
     42:42:android.support.v7.view.ActionBarPolicy get(android.content.Context) -> a
@@ -17915,7 +17915,7 @@ com.meituan.robust.PatchedClassInfo -> com.meituan.robust.PatchedClassInfo:
 com.meituan.robust.PatchesInfo -> com.meituan.robust.PatchesInfo:
     java.util.List getPatchedClassesInfo() -> getPatchedClassesInfo
 com.meituan.robust.R -> com.meituan.robust.R:
-    9:9:void <init>() -> <init>
+    10:10:void <init>() -> <init>
 com.meituan.robust.RobustApkHashUtils -> com.meituan.robust.RobustApkHashUtils:
     java.lang.String robustApkHashValue -> robustApkHashValue
     13:13:void <init>() -> <init>
@@ -17990,18 +17990,12 @@ com.ymlion.robusttest.AppContext -> com.ymlion.robusttest.AppContext:
     16:17:void onTerminate() -> onTerminate
 com.ymlion.robusttest.MainActivity -> com.ymlion.robusttest.MainActivity:
     com.meituan.robust.ChangeQuickRedirect changeQuickRedirect -> m
-    11:11:void <init>() -> <init>
-    14:27:void onCreate(android.os.Bundle) -> onCreate
-    31:36:void openActivity(android.view.View) -> openActivity
-    39:43:void openActivity3(android.view.View) -> openActivity3
-    22:26:void lambda$onCreate$0$MainActivity(android.view.View) -> a
-com.ymlion.robusttest.MainActivity$$Lambda$0 -> com.ymlion.robusttest.a:
-    com.meituan.robust.ChangeQuickRedirect changeQuickRedirect -> a
-    android.view.View$OnClickListener $instance -> b
-    void <init>() -> <init>
-    void onClick(android.view.View) -> onClick
-    void <clinit>() -> <clinit>
-com.ymlion.robusttest.PatchCallback -> com.ymlion.robusttest.b:
+    12:12:void <init>() -> <init>
+    15:28:void onCreate(android.os.Bundle) -> onCreate
+    32:37:void openActivity(android.view.View) -> openActivity
+    40:44:void openActivity3(android.view.View) -> openActivity3
+    23:27:void lambda$onCreate$0(android.view.View) -> a
+com.ymlion.robusttest.PatchCallback -> com.ymlion.robusttest.a:
     com.meituan.robust.ChangeQuickRedirect changeQuickRedirect -> a
     11:11:void <init>() -> <init>
     15:16:void onPatchListFetched(boolean,boolean,java.util.List) -> onPatchListFetched
@@ -18009,7 +18003,7 @@ com.ymlion.robusttest.PatchCallback -> com.ymlion.robusttest.b:
     23:24:void onPatchApplied(boolean,com.meituan.robust.Patch) -> onPatchApplied
     27:28:void logNotify(java.lang.String,java.lang.String) -> logNotify
     31:32:void exceptionNotify(java.lang.Throwable,java.lang.String) -> exceptionNotify
-com.ymlion.robusttest.PatchManipulateImpl -> com.ymlion.robusttest.c:
+com.ymlion.robusttest.PatchManipulateImpl -> com.ymlion.robusttest.b:
     com.meituan.robust.ChangeQuickRedirect changeQuickRedirect -> a
     13:13:void <init>() -> <init>
     15:21:java.util.List fetchPatchList(android.content.Context) -> fetchPatchList
@@ -18023,52 +18017,30 @@ com.ymlion.robusttest.SecondActivity -> com.ymlion.robusttest.SecondActivity:
     62:63:boolean onCreateOptionsMenu(android.view.Menu) -> onCreateOptionsMenu
     72:80:boolean onOptionsItemSelected(android.view.MenuItem) -> onOptionsItemSelected
     92:111:boolean onNavigationItemSelected(android.view.MenuItem) -> a
-    115:123:void newThread(java.lang.String) -> b
-    121:122:void lambda$newThread$1$SecondActivity(java.lang.String) -> a
-    29:30:void lambda$onCreate$0$SecondActivity(android.view.View) -> a
-com.ymlion.robusttest.SecondActivity$$Lambda$0 -> com.ymlion.robusttest.d:
-    com.meituan.robust.ChangeQuickRedirect changeQuickRedirect -> a
-    android.view.View$OnClickListener $instance -> b
-    void <init>() -> <init>
-    void onClick(android.view.View) -> onClick
-    void <clinit>() -> <clinit>
-com.ymlion.robusttest.SecondActivity$$Lambda$1 -> com.ymlion.robusttest.e:
-    com.meituan.robust.ChangeQuickRedirect changeQuickRedirect -> a
-    java.lang.String arg$1 -> b
-    void <init>(java.lang.String) -> <init>
-    void run() -> run
+    115:123:void newThread(java.lang.String) -> a
+    121:122:void lambda$newThread$1(java.lang.String) -> b
+    29:30:void lambda$onCreate$0(android.view.View) -> a
 com.ymlion.robusttest.ThirdActivity -> com.ymlion.robusttest.ThirdActivity:
     com.meituan.robust.ChangeQuickRedirect changeQuickRedirect -> m
     android.widget.TextView mTextMessage -> n
     android.support.design.widget.BottomNavigationView$OnNavigationItemSelectedListener mOnNavigationItemSelectedListener -> o
     12:16:void <init>() -> <init>
-    43:50:void setP2(java.lang.String) -> b
-    56:69:void setR1() -> k
-    72:83:java.lang.String setR2(java.lang.String) -> c
-    88:94:void onCreate(android.os.Bundle) -> onCreate
-    60:65:int lambda$setR1$1$ThirdActivity(java.lang.String) -> a
-    47:48:void lambda$setP2$0$ThirdActivity(java.lang.String,java.lang.String,int) -> a
+    43:50:void setP2(java.lang.String) -> a
+    56:65:void setR1() -> k
+    68:75:int getInt(java.lang.String) -> b
+    79:90:java.lang.String setR2(java.lang.String) -> c
+    95:101:void onCreate(android.os.Bundle) -> onCreate
+    58:60:int lambda$setR1$1(java.lang.String) -> d
+    47:48:void lambda$setP2$0(java.lang.String,java.lang.String,int) -> a
     12:12:android.widget.TextView access$000(com.ymlion.robusttest.ThirdActivity) -> a
     12:12:void access$100(com.ymlion.robusttest.ThirdActivity,java.lang.String) -> a
     12:12:void access$200(com.ymlion.robusttest.ThirdActivity) -> b
-com.ymlion.robusttest.ThirdActivity$$Lambda$0 -> com.ymlion.robusttest.f:
-    com.meituan.robust.ChangeQuickRedirect changeQuickRedirect -> a
-    com.ymlion.robusttest.ThirdActivity arg$1 -> b
-    java.lang.String arg$2 -> c
-    void <init>(com.ymlion.robusttest.ThirdActivity,java.lang.String) -> <init>
-    void onP2(java.lang.String,int) -> a
-com.ymlion.robusttest.ThirdActivity$$Lambda$1 -> com.ymlion.robusttest.g:
-    com.meituan.robust.ChangeQuickRedirect changeQuickRedirect -> a
-    com.ymlion.robusttest.ThirdActivity$RListener $instance -> b
-    void <init>() -> <init>
-    int onR(java.lang.String) -> a
-    void <clinit>() -> <clinit>
 com.ymlion.robusttest.ThirdActivity$1 -> com.ymlion.robusttest.ThirdActivity$1:
     com.meituan.robust.ChangeQuickRedirect changeQuickRedirect -> a
     com.ymlion.robusttest.ThirdActivity this$0 -> b
     18:18:void <init>(com.ymlion.robusttest.ThirdActivity) -> <init>
     22:35:boolean onNavigationItemSelected(android.view.MenuItem) -> a
 com.ymlion.robusttest.ThirdActivity$P2Listener -> com.ymlion.robusttest.ThirdActivity$a:
-    void onP2(java.lang.String,int) -> a
+    void onP2(java.lang.String,int) -> onP2
 com.ymlion.robusttest.ThirdActivity$RListener -> com.ymlion.robusttest.ThirdActivity$b:
-    int onR(java.lang.String) -> a
+    int onR(java.lang.String) -> onR
